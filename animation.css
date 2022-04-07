@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; opacity: 1; }
+    to { width: 100%; opacity: 1; }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
+
+@keyframes fadeInTop {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 0, -20%);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+.fadeIn{
+    animation: fadeIn linear 2s forwards;
+}
+
+.fadeInLeft{
+    animation: fadeInLeft 2s forwards;
+}
+
+.fadeInTop{
+    animation: fadeInTop 2s forwards;
+}
+
+.fadeInRight{
+    animation: fadeInRight 2s forwards;
+}
+
+.typing{
+	animation: typing 3s steps(40, end) forwards;
+}
+
+
+
+
